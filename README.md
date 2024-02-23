@@ -74,9 +74,7 @@ This repository contains the source code for a Node.js backend application named
   
 **Backend**
 
-**Change the Directory to Backend**
 
-    cd backend
 
 **Clone the repository:**
 
@@ -84,7 +82,9 @@ This repository contains the source code for a Node.js backend application named
 
     git clone https://github.com/hashirnp/digital-laundry.git
 
-  
+**Change the Directory to Backend**
+
+    cd backend
 
 **Install dependencies:**
 
