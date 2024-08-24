@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:laudney_frontend/Presentation/Auth/Reset%20Password/forget_screen.dart';
-import 'package:laudney_frontend/Presentation/Home/Staff/staff_home_screen.dart';
+import 'package:laudney_frontend/Presentation/User/Home/user_home_screen.dart';
 
 import '../../Core/Constants/size.dart';
 import '../Widgets/text_field.dart';
@@ -52,9 +52,11 @@ class SignInSection extends StatelessWidget {
           h10,
           ElevatedButton(
               onPressed: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (ctx) => const UserHomeScreen()));
                 if (key.currentState!.validate()) {
-                  Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (ctx) => const StaffHomeScreen()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (ctx) => const UserHomeScreen()));
                 }
               },
               child: const Text("Login"))

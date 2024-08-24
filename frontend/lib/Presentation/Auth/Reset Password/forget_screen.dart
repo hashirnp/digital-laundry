@@ -32,7 +32,7 @@ class ForgetScreen extends StatelessWidget {
                     crossFadeState: val
                         ? CrossFadeState.showFirst
                         : CrossFadeState.showSecond,
-                    duration: const Duration(seconds: 1));
+                    duration: const Duration(milliseconds: 500));
               }),
         ));
   }

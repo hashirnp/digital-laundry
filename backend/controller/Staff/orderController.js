@@ -26,10 +26,12 @@ const updateOrder = async (req, res) => {
         var user = await User.findById({ _id: ObjectID(req.body.userId) });
         // console.log(msg);
         // console.log(user.phone);
+        //prepare msg and send
         await sendMessege(user.phone, msg)
+        
         res.status(201).json({ status: 'updated', data: req.body, })
 
-        //prepare msg and send
+        
 
 
     } catch (e) {

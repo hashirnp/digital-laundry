@@ -25,14 +25,21 @@ ThemeData themeData = ThemeData(
 
   elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-    backgroundColor: MaterialStateProperty.resolveWith<Color>((states) => Colors.blueGrey),
-    foregroundColor: MaterialStateProperty.resolveWith<Color>((states) => Colors.white),
+    backgroundColor:
+        MaterialStateProperty.resolveWith<Color>((states) => Colors.blueGrey),
+    foregroundColor:
+        MaterialStateProperty.resolveWith<Color>((states) => Colors.white),
   )),
 
   // Button theme
   buttonTheme: const ButtonThemeData(
     buttonColor: Colors.blue,
     textTheme: ButtonTextTheme.primary,
+  ),
+
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(
+    backgroundColor: Colors.blueGrey,
+    foregroundColor: Colors.white,
   ),
 
   // Input theme
@@ -53,4 +60,6 @@ ThemeData themeData = ThemeData(
     labelColor: Colors.blue,
     unselectedLabelColor: Colors.grey,
   ),
+
+  
 );
